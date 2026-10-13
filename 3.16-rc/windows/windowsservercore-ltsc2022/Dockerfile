@@ -8,8 +8,6 @@ FROM mcr.microsoft.com/windows/servercore:ltsc2022
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
-# https://github.com/docker-library/python/pull/557
-ENV PYTHONIOENCODING UTF-8
 
 ENV PYTHON_VERSION 3.16.0a1
 
